@@ -1,33 +1,33 @@
 {
     "dependencies": {
-      "connect": "^3.7.0",
-      "ejs": "^3.1.8",
-      "express": "^4.18.2",
-      "http": "^0.0.1-security"
+        "connect": "^3.7.0",
+        "ejs": "^3.1.8",
+        "express": "^4.18.2",
+        "http": "^0.0.1-security"
     },
     "name": "comp229.005.f2022",
     "description": "COMP229 Code Examples",
     "version": "1.0.0",
     "main": "server.js",
     "scripts": {
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
-      "type": "git",
-      "url": "git+https://github.com/santisky8/COMP229.005.F2022.git"
+        "type": "git",
+        "url": "git+https://github.com/santisky8/COMP229.005.F2022.git"
     },
     "keywords": [
-      "COMP229.005",
-      "MEAN",
-      "Express",
-      "EJS",
-      "Assignment1",
-      "NodeJS"
+        "COMP229.005",
+        "MEAN",
+        "Express",
+        "EJS",
+        "Assignment1",
+        "NodeJS"
     ],
     "author": "Santiago Sanchez",
     "license": "MIT",
     "bugs": {
-      "url": "https://github.com/santisky8/COMP229.005.F2022/issues"
+        "url": "https://github.com/santisky8/COMP229.005.F2022/issues"
     },
     "homepage": "https://github.com/santisky8/COMP229.005.F2022#readme"
-  }
+}
