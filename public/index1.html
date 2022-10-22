@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment 1-BMR Calculator-COMP125/SEC001-Santiago Sanchez-300648373</title>
+    <link href="style1.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="allPage">
+        <header>    
+            <h1>Basal Metabolic Rate (BMR) Calculator</h1>
+            <br>
+            </header><!--- Navigating Menu --->
+                <div class="topnav">
+                    <a href="#top"></a>
+                    <a href="index1.html">Home</a>
+                    <a href="index1.html">BMR Calculator</a>
+                    <a href="https://www.centennialcollege.ca/" target="_blank">Centennial College Homepage</a>
+                </div>
+         <div id="container">
+            <!-- Tab links -->
+            <div id="tab">
+                <div id="imperialTab" class="tablinksactive" onclick="chUnit(event, 'topFormI')">Imperial Calculation</div>
+                <div id="metricTab" class="tablinks" onclick="chUnit(event, 'topFormM')">Metric Calculation</div>
+            </div>
+            <div id="form">
+            <!-- Tab content -->
+                <div id="topFormI" class="tabcontent">
+                    <table>
+                        <tr>
+                            <td><label for="genderI">Gender</label></td>
+                            <td colspan="2">
+                                <select id="genderI" name="gender" class="form-control form-control-sm">
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="pounds">Weight</label></td>
+                            <td colspan="2">
+                                <input type="number" id="pounds" placeholder="(lb)" class="form-control form-control-sm" name="pounds" min="0" value ="">&nbsp;pounds
+                            </td>                            
+                        </tr>
+                        <tr>
+                            <td><label for="inches">Height</label></td>
+                            <td colspan="2">
+                                <input type="number" id="inches" placeholder="(in)" class="form-control form-control-sm" name="inches" min="0" value ="">&nbsp;inches
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="ageI">Age</label></td>
+                            <td colspan="2">
+                                <input type="number" id="ageI" placeholder="current" class="form-control form-control-sm" name="age" min="0" value ="">
+                            </td>
+                        </tr>
+                     </table>
+                </div>
+                <div id="topFormM" class="tabcontent">
+                    <table>
+                        <tr>
+                            <td><label for="genderM">Gender</label></td>
+                            <td colspan="2">
+                                <select id="genderM" name="gender" class="form-control form-control-sm">
+                                    <option value="Female">Female</option>
+                                    <option value="Male">Male</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="kg">Weight</label></td>
+                            <td colspan="2">
+                                <input type="number" id="kg" placeholder="(kg)" class="form-control form-control-sm" name="kg" min="0" value ="">&nbsp;kilograms
+                            </td>                           
+                        </tr>
+                        <tr>
+                            <td><label for="cm">Height</label></td>
+                            <td colspan="2">
+                                <input type="number" id="cm" placeholder="(cm)" class="form-control form-control-sm" name="cm" min="0" value ="">&nbsp;centimeters
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="ageM">Age</label></td>
+                            <td colspan="2">
+                                <input type="number" id="ageM" placeholder="current" class="form-control form-control-sm" name="age" min="0" value ="">
+                            </td>
+                        </tr>
+                     </table>
+                </div>
+                <div id="middleForm">
+                    <span>Select your activity level:</span><br>
+                    <div  class="custom-control custom-radio">
+                        <input type="radio" id="littleRadio" class="custom-control-input" name="activityLvl" value="little">
+                        <label class="custom-control-label" for="littleRadio">I am sedentary (little or no exercise)</label><br>
+                    </div>
+                    <div  class="custom-control custom-radio">
+                        <input type="radio" id="lightRadio" class="custom-control-input" name="activityLvl" value="light">
+                        <label class="custom-control-label" for="lightRadio">I am lightly active (light exercise or sports 1-3 days per week)</label><br>
+                    </div>
+                    <div  class="custom-control custom-radio">
+                        <input type="radio" id="moderateRadio" class="custom-control-input" name="activityLvl" value="moderate">
+                        <label class="custom-control-label" for="moderateRadio">I am moderately active (moderate exercise or sports 3-5 days per week)</label><br>
+                    </div>
+                    <div  class="custom-control custom-radio">
+                        <input type="radio" id="hardRadio" class="custom-control-input" name="activityLvl" value="hard">
+                        <label class="custom-control-label" for="hardRadio">I am very active (hard exercise or sports 6-7 days per week)</label><br>
+                    </div>
+                    <div  class="custom-control custom-radio">
+                        <input type="radio" id="superRadio" class="custom-control-input" name="activityLvl" value="super">
+                        <label class="custom-control-label" for="superRadio">I am super active (very hard exercise or sports and a physical job)</label><br>
+                    </div>
+                </div>
+                <div id="bottomForm">
+                    <input type="button" class="btn btn-info" value="Calculate BMR" onclick="calBMR()">
+                </div>
+            </div>
+            <div id="result">
+                <h4>BMR Results</h4>
+                <div id="bmrResult">
+                    <p><b>Your BMR result is:</b></p>
+                    <p id="bmr"></p>
+                </div>
+                <div id="caloricResult">
+                    <p><b>Your daily caloric needs are:</b></p>
+                    <p id="caloricR"></p>
+                </div>
+                <br>
+                <br>
+                <p id="description"></p>
+                <br>
+            </div>
+        </div>
+        <div class="topnav">
+            <a href="#top">Back to top</a>
+            <a href="index1.html">Home</a>
+            <a href="https://www.centennialcollege.ca/" target="_blank">Centennial College Homepage</a>
+        </div>
+        <footer>Copyright: Santiago Sanchez Calle - 300648373 - COMP125-SEC001 - Winter 2022</footer>    
+        <script src="Assignment1.js"></script>
+</body>
+</html>
