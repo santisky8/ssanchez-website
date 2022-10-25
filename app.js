@@ -1,17 +1,3 @@
-const http = require ('http');
-const hostname = '127.0.0.1';
-const port = 3000;
-
-const server = http.createServer((req, res) =>{
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/plain');
-  res.end('Hello World\n');
-});
-
-server.listen(port, hostname, () => {
-  console.log(`Server running at https://localhost:${port}/`);
-});
-
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -35,6 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
 
 app.use('/', indexRouter);
+
 app.use('/users', usersRouter);
 
 // catch 404 and forward to error handler

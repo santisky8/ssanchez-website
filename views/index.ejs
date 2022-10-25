@@ -2,38 +2,74 @@
 <html>
   <head>
     <title><%= title %></title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" >
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/bootstrap/dist/css/bootstrap.min.css'>
+    <script src='/bootstrap/dist/js/bootstrap.bundle.min.js'></script>
+    <link rel='stylesheet' href='/stylesheets/style.css'/>
   </head>
   <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <!-- Bootstrap Navbar -->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="javascript:void(0)" id="logo" src="/public/images/ssc.png"></a>
+        <a class="navbar-brand" href="javascript:void(0)" id="logo" src="../public/images/ssc.png"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="a1navbar">
           <ul class="navbar-nav me-auto">
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">Home</a>
+              <% if (title == "Home"){ %>
+              <a class="nav-link active" href="/">Home</a>
+              <% } else { %>
+              <a class="nav-link" href="/">Home</a>
+              <% } %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="javascript:void(0)">About Me</a>
+              <% if (title == "About"){ %>
+              <a class="nav-link active" href="/about">About Me</a>
+              <% } else { %>
+              <a class="nav-link" href="/about">About Me</a>
+              <% } %>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Projects</a>
+              <% if (title == "Projects"){ %>
+              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">Projects</a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Assignment 1</a></li>
-                <li><a class="dropdown-item" href="#">Assignment 3</a></li>
-                <li><a class="dropdown-item" href="#">Assignment 4</a></li>
+                <li>
+                  <% if (title == "Assignment1"){ %>
+                  <a class="dropdown-item active" href="#">Assignment 1</a>
+                  <% } else { %>
+                  <a class="dropdown-item" href="#">Assignment 1</a>
+                  <% } %>
+                </li>
+                <li>
+                  <% if (title == "Assignment2"){ %>
+                  <a class="dropdown-item active" href="#">Assignment 3</a>
+                  <% } else { %>
+                  <a class="dropdown-item" href="#">Assignment 3</a>
+                  <% } %>
+                </li>
+                <li>
+                  <% if (title == "Assignment3"){ %>
+                  <a class="dropdown-item active" href="#">Assignment 4</a>
+                  <% } else { %>
+                  <a class="dropdown-item" href="#">Assignment 4</a>
+                  <% } %>
+                </li>
               </ul>
             </li>
             <li class="nav-item">
+              <% if (title == "Services"){ %>
+              <a class="nav-link active" href="javascript:void(0)">Services</a>
+              <% } else { %>
               <a class="nav-link" href="javascript:void(0)">Services</a>
+              <% } %>
             </li>
             <li class="nav-item">
+              <% if (title == "Contact"){ %>
+              <a class="nav-link active" href="javascript:void(0)">Contact Me</a>
+              <% } else { %>
               <a class="nav-link" href="javascript:void(0)">Contact Me</a>
+              <% } %>
             </li>
           </ul>
           <form class="d-flex">
