@@ -14,7 +14,7 @@ router.get('/', function(req, res, next) {
 
 router.get('/projects', function(req, res, next) {
   res.render(
-    'projectservices', 
+    'projects', 
     { 
       title: 'Projects',
     }
@@ -23,7 +23,7 @@ router.get('/projects', function(req, res, next) {
 
 router.get('/assignment1', function(req, res, next) {
   res.render(
-    'projectservices', 
+    'assignment1', 
     { 
       title: 'Assignment 1',
     }
@@ -32,7 +32,7 @@ router.get('/assignment1', function(req, res, next) {
 
 router.get('/assignment2', function(req, res, next) {
   res.render(
-    'projectservices', 
+    'assignment2', 
     { 
       title: 'Assignment 2',
     }
@@ -41,7 +41,7 @@ router.get('/assignment2', function(req, res, next) {
 
 router.get('/assignment3', function(req, res, next) {
   res.render(
-    'projectservices', 
+    'assignment3', 
     { 
       title: 'Assignment 3',
     }
@@ -50,7 +50,7 @@ router.get('/assignment3', function(req, res, next) {
 
 router.get('/services', function(req, res, next) {
   res.render(
-    'projectservices', 
+    'services', 
     { 
       title: 'Services',
     }

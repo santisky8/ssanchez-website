@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Assignment 5-COMP125/SEC001-Santiago Sanchez-300648373</title>
+    <link href="../public/stylesheets/style3.css" rel="stylesheet" />
+</head>
+<body>    
+    <div id="allPage">      
+        <header>
+            </header><!--- Navigating Menu --->             
+                <div class="topnav">
+                    <a href="#top"></a>
+                    <a href="index4.html">Home</a>
+                    <a href="index4.html">Registration Form</a>
+                    <a href="https://www.centennialcollege.ca/" target="_blank">Centennial College Homepage</a>
+                </div>                
+                <br>
+                    <div id="formDiv">
+                        <h2>Member Registration</h2> 
+                        <p>Please complete all the fields below:</p>
+                        <hr />
+                        <div>
+                            <form id="form" action="mailto:ninawu424@gmail.com" method="post">
+                                <table>
+                                    <tr>
+                                        <td class="errStar"><div></div></td>
+                                        <td><div class="errDt"></div><label for="fname">First Name: </label></td>
+                                        <td><input id="fname" name="fname" type="text" class="form-control form-control-sm" /></td>
+                                    </tr>
+                                
+                                    <tr>
+                                        <td class="errStar"><div></div></td>
+                                        <td><div class="errDt"></div><label for="lname">Last Name:</label></td>
+                                        <td><input id="lname" type="text" class="form-control form-control-sm" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="errStar"><div></div></td>
+                                        <td><div class="errDt"></div><label for="address">Address: </label></td>
+                                        <td><input id="address" type="text" class="form-control form-control-sm" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="errStar"><div></div></td>
+                                        <td><div class="errDt"></div><label for="city">City: </label></td>
+                                        <td><input id="city" type="text" class="form-control form-control-sm" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="errStar"><div></div></td>
+                                        <td><div class="errDt"></div><label for="code">Postal Code: </label></td>
+                                        <td><input id="code" type="text" class="form-control form-control-sm" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="errStar"><div></div></td>
+                                        <td><div class="errDt"></div><label for="province">Province: </label></td>
+                                        <td>
+                                            <select id="province" class="form-control form-control-sm">
+                                                <option disabled selected value="">Select Province</option>
+                                                <option>QC</option>
+                                                <option>ON</option>
+                                                <option>MN</option>
+                                                <option>SK</option>
+                                                <option>AB</option>
+                                                <option>BC</option>
+                                            </select></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="errStar"><div></div></td>
+                                        <td><div class="errDt"></div><label for="age">Age: </label></td>
+                                        <td><input id="age" type="number" class="form-control form-control-sm" min="18" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="errStar"><div></div></td>
+                                        <td><div class="errDt"></div><label for="psw">Password: </label></td>
+                                        <td><input id="psw" type="password" class="form-control form-control-sm" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="errStar"><div></div></td>
+                                        <td><div class="errDt"></div><label for="confirmpsw">Confirm Password:</label></td>
+                                        <td><input id="confirmpsw" type="password" class="form-control form-control-sm" /></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="errStar"><div></div></td>
+                                        <td><div class="errDt"></div><label for="email">Email: </label></td>
+                                        <td><input id="email" type="email" class="form-control form-control-sm" /></td>
+                                    </tr>
+                                </table>
+                                <div id="submitForm">
+                                    <input id="submitBtn" type="button" class="btn btn-info" value="Register Now"/>
+                                    <input id="clearBtn" type="button" class="btn btn-info" value="Clear Form"/>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="accountDiv">
+                        <h3>Congratulations!</h3>
+                        <img id="checkmark" src="images/cm.png"/> 
+                        <p>You have successfully signed up!</p>
+                        <hr />
+                        <h5>Your profile</h5>
+                        <div>
+                                <table>
+                                    <tr>
+                                        <td><div>First Name: </div></td>
+                                        <td><div class="info"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div>Last Name: </div></td>
+                                        <td><div class="info"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div>Address: </div></td>
+                                        <td><div class="info"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div>Age: </div></td>
+                                        <td><div class="info"></div></td>
+                                    </tr>
+                                    <tr>
+                                        <td><div>Email: </div></td>
+                                        <td><div class="info"></div></td>
+                                    </tr>
+                                </table>
+                        </div>
+                </div>
+<br>
+<br>
+        <div class="topnav">
+            <a href="#top">Back to top</a>
+            <a href="/assignment3">Home</a>
+            <a href="https://www.centennialcollege.ca/" target="_blank">Centennial College Homepage</a>
+        </div>
+        <br>
+        <footer>Copyright: Santiago Sanchez Calle - 300648373 - COMP125-SEC001 - Winter 2022</footer>    
+        <script src="../public/javascripts/assignment3.js"></script>
+</body>
+</html>
