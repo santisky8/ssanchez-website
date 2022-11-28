@@ -11,13 +11,13 @@ function populateFigures() {
     var currentFig;
     if (figureCount === 3) {
         for (var i = 1; i < 4; i++) {
-            filename = "images/IMG_0" + photoOrder[i] + ".jpg";
+            filename = "/assets/IMG_0" + photoOrder[i] + ".jpg";
             currentFig = document.getElementsByTagName("img")[i - 1];
             currentFig.src = filename;
         }
     } else {
         for (var i = 0; i < 5; i++) {
-            filename = "images/IMG_0" + photoOrder[i] + ".jpg";
+            filename = "/assets/IMG_0" + photoOrder[i] + ".jpg";
             currentFig = document.getElementsByTagName("img")[i];
             currentFig.src = filename;
         }
@@ -77,7 +77,7 @@ function displayFavorites() {
         var favImage = document.createElement("img");
         favImage.width = "160";
         favImage.height = "90";
-        favImage.src = "images/IMG_0" + favList[i] + ".jpg";
+        favImage.src = "/assets/IMG_0" + favList[i] + ".jpg";
         favImgDiv.appendChild(favImage);
         favFigure.appendChild(favImgDiv);
 
@@ -132,8 +132,8 @@ function previewFive() {
         numberButton.attachEvent("onclick", previewThree);
     }
     // add appropriate src values to two new img elements
-    document.getElementsByTagName("img")[0].src = "images/IMG_0" + photoOrder[0] + "fav.jpg";
-    document.getElementsByTagName("img")[8].src = "images/IMG_0" + photoOrder[8] + "fav.jpg";
+    document.getElementsByTagName("img")[0].src = "/assets/IMG_0" + photoOrder[0] + "fav.jpg";
+    document.getElementsByTagName("img")[8].src = "/assets/IMG_0" + photoOrder[8] + "fav.jpg";
 }
 /* switch to 3-image layout */
 function previewThree() {

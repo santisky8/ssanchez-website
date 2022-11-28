@@ -50,7 +50,7 @@ router.get('/assignment3', function(req, res, next) {
 
 router.get('/services', function(req, res, next) {
   res.render(
-    'services', 
+    'index', 
     { 
       title: 'Services',
     }
