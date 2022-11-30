@@ -7,7 +7,7 @@ router.get('/', function(req, res, next) {
     'index', 
     { 
       title: 'Home', 
-      name: 'Julio' 
+      name: 'Santiago' 
     }
   );
 });
@@ -72,7 +72,7 @@ router.get('/contact', function(req, res, next) {
     'index', 
     { 
       title: 'Contact',
-      name: 'Julio' 
+      name: 'Santiago' 
     }
   );
 });
