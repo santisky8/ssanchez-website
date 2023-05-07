@@ -1,0 +1,112 @@
+<% include partials/header.ejs %>
+<div class="container pt-5">
+    <h1><%= title %></h1>    
+</div>      
+        <% if(title == "Home"){  %>
+        <div class="container pt-5">    
+            <h3 class="text-center"><small>Welcome to the <%= title %> page of Santiago Sanchez's Website</small></h3>
+        </br>
+        </br>
+        </br>
+        <div class="container text-center">            
+        </br>
+        <blockquote>
+            <h4 class="text-centre"><i>" To improve in the search of mastery. </br></br>Limits are those you impose on yourself. " </i></h4>
+        </br>
+            <footer>Santiago Sanchez Calle <cite title="Source Title">Mission Statement</cite></footer>
+          </blockquote>
+        </br>
+        </br>
+        </br>    
+        </div>  
+        <% } %>
+        <% if(title == "Services"){  %>
+            <div class="container pt-5">
+            <p>Welcome to the <%= title %> page of Santiago's Website</p>
+            </br>
+            </div>
+            <% } %>        
+        <% if(title == "About Me"){  %>
+        <div class="container pt-5 text-center">    
+            <h2><small>A little bit <%= title %></small></h2>
+            </div>
+        </br>
+            <dl class="list-unstyled">
+                <dt></dt>
+                <dd></dd>
+                <dt></dt>
+                <dd></dd>
+            <dl>  
+                <div class="row">
+                    <div class="col-sm-4">
+                      <div class="panel panel-default">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Name</h3>
+                        </div>
+                        <div class="panel-body">
+                          My name is Santiago Sanchez Calle
+                        </div>
+                      </div>
+                      <div class="panel panel-primary">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Education</h3>
+                        </div>
+                        <div class="panel-body">
+                            I am a second year Software Engineering Technology student at Centennial College
+                        </div>
+                      </div>
+                    </div><!-- /.col-sm-4 -->
+                    <div class="col-sm-4">
+                      <div class="panel panel-success">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Tech Skills</h3>
+                        </div>
+                        <div class="panel-body">
+                            I have knowledge of C#, Python, Java, SQL, JavaScript, Node.JS, Express.JS, Angular.JS and MongoDB
+                        </div>
+                      </div>
+                      <div class="panel panel-info">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Residences</h3>
+                        </div>
+                        <div class="panel-body">
+                            I have lived in: Medellin, Colombia, Toronto, Canada, and London, England.
+                        </div>
+                      </div>
+                    </div><!-- /.col-sm-4 -->
+                    <div class="col-sm-4">
+                      <div class="panel panel-warning">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Languages</h3>
+                        </div>
+                        <div class="panel-body">
+                            I am fluent in Spanish, English and French
+                        </div>
+                      </div>
+                      <div class="panel panel-danger">
+                        <div class="panel-heading">
+                          <h3 class="panel-title">Interests</h3>
+                        </div>
+                        <div class="panel-body">
+                            Calisthenic workouts, nature hikes and documentaries
+                        </div>
+                      </div>
+                    </div><!-- /.col-sm-4 -->         
+        </br>
+        <div class="container pt-5 text-center">
+            <img id="portrait" src="assets/ssc.jpg" style="width:40%">
+        </div>
+        </br> 
+            <p>To find out more about my qualifications, check out my <a href="/assets/SSC-2023-R.pdf" target="_blank">CV/Resume</a></p>
+        </div>
+        
+        <div class="container pt-5">    
+        </div>    
+        <% } %>        
+        <% if(title == "Contact"){  %>
+        <div class="container pt-5">    
+            <p>Welcome to Santiago's <%= title %> page</p>
+            <a href="/assets/SSC-2023-R.pdf" target="_blank">Santiago's Resume</a>
+        </div> 
+        <% } %>          
+<% include partials/footer.ejs %>
