@@ -1,14 +1,6 @@
 var express = require('express');
 var router = express.Router();
 
-const cool = require('cool-ascii-faces')
-const express = require('express')
-const path = require('path')
-
-const PORT = process.env.PORT || 5001
-
-.get('/times', (req, res) => res.send(showTimes()))
-
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render(
@@ -86,20 +78,3 @@ router.get('/contact', function(req, res, next) {
 });
 
 module.exports = router;
-
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
-  .get('/cool', (req, res) => res.send(cool()))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
-
-  function showTimes() {
-    const times = process.env.TIMES || 5
-    let result = ''
-    for (i = 0; i < times; i++) {
-      result += i + ' '
-    }
-    return result
-  }
